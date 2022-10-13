@@ -23,8 +23,8 @@ particula3 = Particula(3, 7, 5, 4, 20, 6, 255, 100, 100, 0)
 
 lista = listaParticula()
 
-lista.agregar_final(particula2)
-lista.agregar_final(particula3)
+lista.agregar_inicio(particula3)
+lista.agregar_inicio(particula2)
 lista.agregar_inicio(particula1)
 
 lista.mostrar()
