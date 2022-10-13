@@ -15,6 +15,7 @@ class Particula(object):
 
     def __init__(self, id, origen_x, origen_y, destino_x, destino_y, veloicidad, red, green, blue, distancia):
         """ Propiedades de la clase """
+        self.__id = id
         self.__origen_x = origen_x
         self.__origen_y = origen_y
         self.__destino_x = destino_x
@@ -30,7 +31,9 @@ class Particula(object):
 
     def __str__(self):
         return (
-            "Origen X: " + str(self.__origen_x) + ",\n"
+            "######################################\n"
+            + "Id: " + str(self.__id) + ",\n"
+            + "Origen X: " + str(self.__origen_x) + ",\n"
             + "Origen Y: " + str(self.__origen_y) + ",\n"
             + "Destino X: " + str(self.__destino_x) + ",\n"
             + "Destino Y: " + str(self.__destino_y) + ",\n"
@@ -39,9 +42,3 @@ class Particula(object):
             + "Verde: " + str(self.__green) + ",\n"
             + "Azul: " + str(self.__blue) + ",\n"
             + "Distancia: " + str(self.__distancia))
-
-
-""" id, origen_x, origen_y, destino_x, destino_y, veloicidad, red, green, blue, distancia """
-particula1 = Particula(1, 5, 5, 10, 15, 3, 100, 100, 100, 0)
-
-print(particula1)
